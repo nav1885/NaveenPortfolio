@@ -42,6 +42,17 @@ const PROJECTS = [
     repo: "https://github.com/nav1885/Veloscape"
   },
   {
+    name: "TickerLite", meta: "Live · iOS + Android", icon: "assets/projects/tickerlite/icon.png",
+    tagline: "Your stocks, on alert.",
+    desc: "A lightweight stock-watcher — search tickers, follow live quotes and charts, and set price alerts that ping you the moment a stock crosses your target. Backed by a real-time market-data service running on its own cloud backend.",
+    badges: [
+      { type: "live", label: "Live on App Store" },
+      { type: "android", label: "Android" },
+      { type: "ios", label: "React Native · Expo" }
+    ],
+    store: "https://apps.apple.com/app/id6775094738"
+  },
+  {
     name: "MicroMoment", commits: 36, glyph: "5m",
     tagline: "Five minutes a day.",
     desc: "A focused habit tracker built on one idea: small, daily, done. A hard cap of 5 active habits, 1–5 minutes each, one daily check-in. Fully local-first — SQLite on device, no account, no sync.",
@@ -62,17 +73,6 @@ const PROJECTS = [
       { type: "ai", label: "Local LLM · Ollama" }
     ],
     repo: "https://github.com/nav1885/PaxtonAgent"
-  },
-  {
-    name: "DeFi Yield Farm", commits: 2, glyph: "◈",
-    tagline: "Stake. Earn. On-chain.",
-    desc: "A decentralized yield-farming dApp on Ethereum — stake a stablecoin into a smart contract and earn reward tokens over time. Solidity contracts with a React/Web3 front end.",
-    badges: [
-      { type: "chain", label: "Blockchain · Solidity" },
-      { type: "web", label: "Web3 · React" },
-      { type: "chain", label: "Ethereum" }
-    ],
-    repo: "https://github.com/nav1885/defi_tutorial"
   }
 ];
 
@@ -80,9 +80,19 @@ function badgeHTML(b) {
   return `<span class="badge badge--${b.type}"><span class="badge__dot"></span>${b.label}</span>`;
 }
 function cardHTML(p) {
-  const visual = p.shots
-    ? `<div class="card__shots">${p.shots.map(s => `<img src="${s}" alt="${p.name} screenshot" loading="lazy">`).join("")}</div>`
-    : `<div class="card__art"><span class="card__art-glyph">${p.glyph || p.name[0]}</span></div>`;
+  let visual;
+  if (p.shots) {
+    visual = `<div class="card__shots">${p.shots.map(s => `<img src="${s}" alt="${p.name} screenshot" loading="lazy">`).join("")}</div>`;
+  } else if (p.icon) {
+    visual = `<div class="card__art card__art--icon"><img class="card__icon" src="${p.icon}" alt="${p.name} app icon" loading="lazy"></div>`;
+  } else {
+    visual = `<div class="card__art"><span class="card__art-glyph">${p.glyph || p.name[0]}</span></div>`;
+  }
+  const meta = p.commits != null
+    ? `<span class="card__commits"><b>${p.commits}</b> commits</span>`
+    : (p.meta ? `<span class="card__commits">${p.meta}</span>` : "");
+  const repo = p.repo
+    ? `<a href="${p.repo}" target="_blank" rel="noopener" class="card__link card__link--repo">View repo ↗</a>` : "";
   const store = p.store
     ? `<a href="${p.store}" target="_blank" rel="noopener" class="card__link card__link--store">App Store ↗</a>` : "";
   return `
@@ -91,15 +101,12 @@ function cardHTML(p) {
       <div class="card__body">
         <div class="card__top">
           <h3 class="card__name">${p.name}</h3>
-          <span class="card__commits"><b>${p.commits}</b> commits</span>
+          ${meta}
         </div>
         <p class="card__tagline">${p.tagline}</p>
         <p class="card__desc">${p.desc}</p>
         <div class="card__badges">${p.badges.map(badgeHTML).join("")}</div>
-        <div class="card__links">
-          <a href="${p.repo}" target="_blank" rel="noopener" class="card__link card__link--repo">View repo ↗</a>
-          ${store}
-        </div>
+        <div class="card__links">${repo}${store}</div>
       </div>
     </article>`;
 }
