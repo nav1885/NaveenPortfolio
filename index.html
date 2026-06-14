@@ -25,7 +25,6 @@
       <button class="tab-link is-active" data-tab="home" role="tab">Home</button>
       <button class="tab-link" data-tab="resume" role="tab">Résumé</button>
       <button class="tab-link" data-tab="projects" role="tab">Projects</button>
-      <button class="tab-link" data-tab="strava" role="tab">Strava</button>
       <button class="tab-link" data-tab="contact" role="tab">Contact</button>
     </nav>
   </header>
@@ -35,37 +34,56 @@
     <!-- ============ HOME ============ -->
     <section class="panel panel--home is-active" id="panel-home" role="tabpanel">
       <div class="hero__grid" aria-hidden="true"></div>
+      <div class="blob" aria-hidden="true"></div>
       <div class="hero">
-        <p class="hero__eyebrow reveal">San Jose, CA &nbsp;·&nbsp; Engineering Manager</p>
-        <h1 class="hero__title reveal" style="--d:.06s">Naveen <span class="accent">H</span></h1>
-        <p class="hero__lede reveal" style="--d:.16s">
-          I build <em>agentic AI platforms</em>, distributed systems, and the
-          <em>high-caliber teams</em> that ship them — currently leading the core platform
-          for <strong>Rufus</strong>, Amazon's AI shopping assistant.
-        </p>
-        <div class="hero__actions reveal" style="--d:.24s">
-          <button class="btn btn--solid" data-tab="resume">View my résumé</button>
-          <button class="btn btn--ghost" data-tab="projects">See projects</button>
-          <a href="https://github.com/nav1885" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+        <div class="hero__top reveal">
+          <span>Engineering Manager — Amazon · Rufus</span>
+          <span>San Jose, CA</span>
         </div>
 
-        <div class="stats reveal" style="--d:.32s">
-          <div class="stat">
-            <div class="stat__num" data-count="13" data-suffix="+">0</div>
-            <div class="stat__label">Years at Amazon</div>
+        <h1 class="hero__name reveal" style="--d:.06s">Naveen&nbsp;<span class="accent">H</span></h1>
+
+        <div class="hero__body">
+          <div class="hero__lead">
+          <div class="hero__intro reveal" style="--d:.16s">
+            <p>
+              I'm an engineering manager at <strong>Amazon</strong>, leading the core platform team for
+              <strong>Rufus</strong>, the AI shopping assistant. The platform is the foundation for
+              building and hosting its agents and skills — routing, planning, orchestration — to answer a
+              customer query accurately and reliably at scale.
+            </p>
+            <p>
+              I studied computer science at Bangalore Institute of Technology and Florida International
+              University, and I've spent the last 13 years at Amazon — Lab126, Halo, Last Mile, and now
+              Rufus — wearing a different hat at each, on problems that had little in common.
+            </p>
+            <p>
+              I like chasing hard problems, and there's a real joy in solving them. The side projects are
+              that same itch on my own time: I build them end to end, usually to fix something that was
+              bugging me.
+            </p>
+            <p>
+              When I'm not working or tinkering with a side project, I'm on a bike — mountain and road both.
+              Weekends usually mean the local trails, the Santa Cruz mountains, or the long, winding roads
+              south of Almaden Valley. It's no accident two of those projects, VoxRider and Veloscape,
+              started right there in the saddle.
+            </p>
           </div>
-          <div class="stat">
-            <div class="stat__num" data-count="5" data-suffix="">0</div>
-            <div class="stat__label">Teams built &amp; led</div>
+
+          <div class="hero__aside reveal" style="--d:.24s">
+            <p class="hero__hint">
+              Tabs up top — <button class="link-tab" data-tab="resume">Résumé</button> for the career,
+              <button class="link-tab" data-tab="projects">Projects</button> for the side work.
+            </p>
+            <div class="hero__actions">
+              <button class="btn btn--solid" data-tab="resume">View my résumé</button>
+              <a href="https://github.com/nav1885" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat__num" data-count="200" data-suffix="K+">0</div>
-            <div class="stat__label">Customers served</div>
           </div>
-          <div class="stat">
-            <div class="stat__num" data-count="100" data-suffix="TB+">0</div>
-            <div class="stat__label">Data processed</div>
-          </div>
+          <figure class="hero__portrait reveal" style="--d:.3s">
+            <img src="assets/img/profile.jpg" alt="Naveen H" width="900" height="1200" />
+          </figure>
         </div>
       </div>
     </section>
@@ -83,25 +101,6 @@
           </p>
         </div>
 
-        <div class="competencies reveal">
-          <div class="comp">
-            <span class="comp__no">01</span>
-            <p>Identifying the right problems and building roadmaps with a long-term vision aligned to organizational objectives.</p>
-          </div>
-          <div class="comp">
-            <span class="comp__no">02</span>
-            <p>Hiring and building strong, cohesive, inclusive teams — and growing people into their full potential.</p>
-          </div>
-          <div class="comp">
-            <span class="comp__no">03</span>
-            <p>Deep command of the SDLC, agile, and product ownership — with a bias for lean, efficient process.</p>
-          </div>
-          <div class="comp">
-            <span class="comp__no">04</span>
-            <p>Agentic platforms for LLMs, distributed systems, API design, serverless stacks, auth, and big data.</p>
-          </div>
-        </div>
-
         <h3 class="block-title reveal">Experience</h3>
         <ol class="timeline">
           <li class="t-item reveal">
@@ -114,12 +113,15 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Rufus <span>— Santa Clara, CA</span></p>
               <p class="t-item__desc">
-                Lead the <strong>core platform team</strong> for Rufus, Amazon's AI shopping assistant.
-                Built the platform that orchestrates streaming, multi-service LLM workflows with graceful
-                degradation across NA, EU &amp; Far East — and hosts the <strong>multi-agent</strong> stack
-                (query understanding, routing, planning). Delivered <strong>Deep Research</strong>, an async
-                agentic workflow that compiles personalized shopping guides.
+                Lead and grow the <strong>core platform team</strong> for Rufus, Amazon's AI shopping
+                assistant — the experience that guides customers through their shopping journey and answers
+                questions on products, recommendations, comparisons, price alerts, and more.
               </p>
+              <ul class="t-item__points">
+                <li>The team builds the core platform that orchestrates streaming workflows across multiple internal services and LLMs — with graceful degradation, load testing, and operations across North America, Europe, and the Far East.</li>
+                <li>The platform hosts a <strong>multi-agent</strong> stack — query understanding, routing, planning, and orchestration — to answer customer queries accurately and at low latency.</li>
+                <li>Drove delivery of <strong>Deep Research</strong>, an async agentic workflow that compiles a complete, personalized shopping guide from a customer's preferences.</li>
+              </ul>
               <ul class="t-item__tags"><li>Agentic AI / LLMs</li><li>Multi-agent orchestration</li><li>Streaming</li><li>Global scale</li></ul>
             </div>
           </li>
@@ -131,11 +133,16 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Last Mile <span>— Santa Cruz, CA</span></p>
               <p class="t-item__desc">
-                Led the team behind an Android <strong>in-vehicle delivery app</strong> — routes, itineraries,
-                turn-by-turn navigation for delivery drivers. Partnered with OEMs on an over-the-air update
-                mechanism that cut release velocity by <strong>75%</strong>, expanded into the EU with
-                multi-language support, and overhauled operational metrics &amp; monitoring.
+                Managed the team building an Android <strong>in-vehicle delivery app</strong> that guides
+                drivers through daily routes, itineraries, and turn-by-turn navigation to deliver packages
+                to retail customers.
               </p>
+              <ul class="t-item__points">
+                <li>Partnered with external OEM partners on an over-the-air update mechanism, enabling rapid, autonomous updates that cut release time by <strong>75%</strong>.</li>
+                <li>Expanded the app into <strong>EU regions</strong> with multi-language support for seamless driver adoption.</li>
+                <li>Led developer-productivity initiatives — CI optimization, pre-commit automated testing, pipeline automation, and automated APK builds and signing.</li>
+                <li>Restructured operational metrics to better classify customer concerns, improving monitoring and notifications.</li>
+              </ul>
               <ul class="t-item__tags"><li>Android</li><li>OTA updates</li><li>EU expansion</li><li>Developer productivity</li></ul>
             </div>
           </li>
@@ -147,11 +154,15 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Halo Health Technology <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Built a high-performing <strong>9-person team</strong> to improve the accuracy of algorithms
-                running on Halo wearables. Launched a performance-visualization framework wired into the
-                deployment pipeline to gate releases on KPIs, stood up on-device E2E testing, and designed
-                customer features for <strong>200K+ users</strong>.
+                Built and led a high-performing, <strong>9-person</strong> multi-disciplinary team to tackle
+                accuracy challenges and improve the efficacy of algorithms running on Halo health devices.
               </p>
+              <ul class="t-item__points">
+                <li>Defined the team's mission, charter, goals, and a <strong>3-year roadmap</strong>, working closely with product, science, engineering, and partner teams.</li>
+                <li>Launched a framework to visualize algorithm performance for applied-science teams, integrated into the pipeline to gate deployments on KPIs and reduce churn.</li>
+                <li>Stood up on-device <strong>end-to-end testing</strong> in a controlled environment to measure performance and eliminate defects before shipping.</li>
+                <li>Built a sensor-data collection pipeline for iterative algorithm development, and shipped customer-facing features to <strong>200,000+</strong> users with a closed-loop improvement system.</li>
+              </ul>
               <ul class="t-item__tags"><li>Wearables</li><li>Applied science</li><li>Algorithm quality</li><li>Roadmap &amp; charter</li></ul>
             </div>
           </li>
@@ -163,12 +174,16 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Lab126 <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Built a team of 6 from scratch to enable ML for a multi-year roadmap — shipping
-                <strong>4 services + 5 AWS batch workflows</strong> processing <strong>100TB+</strong>.
-                Delivered a managed analytics platform serving <strong>1,200 internal users</strong> across
-                100+ dashboards (serverless + GraphQL + React), cutting infra cost <strong>90%</strong> on a
-                $1M budget.
+                Built a team of <strong>6 engineers</strong> from scratch to partner with applied and research
+                scientists on ML infrastructure for a multi-year roadmap — defining strategy, execution
+                methodology, and hiring.
               </p>
+              <ul class="t-item__points">
+                <li>Over two years, the team shipped <strong>4 services and 5 AWS batch workflows</strong> processing <strong>100TB+</strong> for pre-processing, transformation, and batch inference.</li>
+                <li>Delivered a fully managed reporting &amp; analytics platform — <strong>100+ dashboards</strong> serving <strong>1,200+</strong> engineers, PMs, and executives across regions; serverless microservices, GraphQL backends, and a React static-site frontend. Cut infra cost <strong>90%</strong>, saved 50%+ productivity time, CSAT 4/5.</li>
+                <li>Streamlined the SDLC — architecture, documentation, and CI/CD with automated tests — nearly eliminating post-production issues and reducing developer burnout by <strong>55%+</strong>.</li>
+                <li>Managed a <strong>$1M budget</strong> and AWS capacity planning, holding cost estimates within 5–10%.</li>
+              </ul>
               <ul class="t-item__tags"><li>Machine learning infra</li><li>Serverless</li><li>GraphQL · React</li><li>$1M budget</li></ul>
             </div>
           </li>
@@ -180,11 +195,14 @@
               <h3 class="t-item__role">Senior Software Development Engineer · Lead</h3>
               <p class="t-item__org">Amazon · Lab126 <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Designed a serverless, highly scalable ML microservice for return-rate prediction —
-                eliminating a 3P dependency and <strong>saving $100K/year</strong>. Built a reusable
-                ingestion framework for 20+ contract manufacturers and an OAuth authentication
-                micro-service on AWS Cognito.
+                As tech lead, designed and built a serverless, highly scalable RESTful ML microservice for
+                return-rate prediction, fronted by a dashboard web app.
               </p>
+              <ul class="t-item__points">
+                <li>Replaced a third-party dependency and a 3-week, error-prone manual process — <strong>saving $100K/year</strong> and returning results in seconds at basic cloud-infra cost; multi-threaded processors handled 10+ years of on-demand data.</li>
+                <li>Built a reusable, horizontally-scaling framework to ingest data from <strong>20+ contract manufacturers</strong> into 4 databases, with automated CI/CD (unit tests and code-review gates).</li>
+                <li>Designed an OAuth authentication microservice on <strong>AWS Cognito</strong> with federated access and signed temporary tokens, fronting all of the team's frontend apps.</li>
+              </ul>
               <ul class="t-item__tags"><li>ML services</li><li>OAuth · Cognito</li><li>CI/CD</li><li>Scalability</li></ul>
             </div>
           </li>
@@ -196,10 +214,13 @@
               <h3 class="t-item__role">Software Development Engineer</h3>
               <p class="t-item__org">Amazon · Lab126 <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Built a BI reporting engine from the ground up for 400+ internal users across 10+ geos, and
-                a big-data ingestion / summarization platform (<strong>100TB+</strong>) deriving device
-                telemetry and field-health metrics.
+                Designed and built a <strong>BI reporting engine</strong> from the ground up, serving 400+
+                internal users across 10+ geographies.
               </p>
+              <ul class="t-item__points">
+                <li>Built and operated a big-data ingestion and summarization platform (<strong>100TB+</strong>) deriving device telemetry, performance, and usage metrics to monitor field-device health.</li>
+                <li>Added dashboard web-app features including <strong>SSO</strong> and VIP management.</li>
+              </ul>
               <ul class="t-item__tags"><li>Big data</li><li>BI &amp; reporting</li><li>Telemetry</li><li>SSO</li></ul>
             </div>
           </li>
@@ -234,31 +255,6 @@
         <a href="https://github.com/nav1885" target="_blank" rel="noopener" class="proj-all reveal">
           See everything on GitHub <span>↗</span>
         </a>
-      </div>
-    </section>
-
-    <!-- ============ STRAVA ============ -->
-    <section class="panel panel--strava" id="panel-strava" role="tabpanel">
-      <div class="strava__inner">
-        <div class="strava__copy reveal">
-          <span class="section__tag section__tag--dark">Off the clock</span>
-          <h2 class="strava__title">I also ride.<br>A lot.</h2>
-          <p class="strava__lede">
-            The cycling apps in Projects aren't an accident — road and trail riding is where I think.
-            Two of them (VoxRider &amp; Veloscape) came straight out of problems I hit in the saddle.
-          </p>
-          <a href="https://www.strava.com/athletes/55120970" target="_blank" rel="noopener" class="btn btn--strava">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>
-            Follow on Strava
-          </a>
-        </div>
-        <div class="strava__stats reveal" style="--d:.1s">
-          <!-- Edit the two mileage numbers below as you log miles -->
-          <div class="s-stat"><div class="s-stat__num">—</div><div class="s-stat__label">Miles ridden</div></div>
-          <div class="s-stat"><div class="s-stat__num">—</div><div class="s-stat__label">Miles run</div></div>
-          <div class="s-stat"><div class="s-stat__num">Road&nbsp;+&nbsp;MTB</div><div class="s-stat__label">Rider</div></div>
-          <div class="s-stat"><div class="s-stat__num">Garmin</div><div class="s-stat__label">Varia radar setup</div></div>
-        </div>
       </div>
     </section>
 

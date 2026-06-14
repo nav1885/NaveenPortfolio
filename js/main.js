@@ -62,17 +62,6 @@ const PROJECTS = [
       { type: "ai", label: "Expo · SQLite" }
     ],
     repo: "https://github.com/nav1885/MicroMoment"
-  },
-  {
-    name: "PaxtonAgent", commits: 1, glyph: "⌘",
-    tagline: "A personal agent for the mundane.",
-    desc: "A customizable multi-agent framework powered by local LLMs via Ollama and orchestrated with LangGraph — a private, run-on-your-machine playground for agentic task automation.",
-    badges: [
-      { type: "ai", label: "Multi-agent · LangGraph" },
-      { type: "web", label: "Python" },
-      { type: "ai", label: "Local LLM · Ollama" }
-    ],
-    repo: "https://github.com/nav1885/PaxtonAgent"
   }
 ];
 
@@ -140,7 +129,7 @@ function revealPanel(panel) {
 }
 
 // ---- Tab router ----
-const TABS = ["home", "resume", "projects", "strava", "contact"];
+const TABS = ["home", "resume", "projects", "contact"];
 const tabLinks = document.querySelectorAll(".tab-link");
 
 function setTab(name, push = true) {
