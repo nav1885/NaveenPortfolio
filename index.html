@@ -13,7 +13,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' font-family='monospace' font-weight='bold' fill='%23ff4d2e'>N</text></svg>" />
 </head>
@@ -22,10 +22,10 @@
   <header class="nav" id="nav">
     <button class="nav__logo" data-tab="home">NAVEEN&nbsp;H<span class="dot">.</span></button>
     <nav class="nav__tabs" id="tabs" role="tablist">
-      <button class="tab-link is-active" data-tab="home" data-num="01" role="tab">Home</button>
-      <button class="tab-link" data-tab="resume" data-num="02" role="tab">Résumé</button>
-      <button class="tab-link" data-tab="projects" data-num="03" role="tab">Projects</button>
-      <button class="tab-link" data-tab="contact" data-num="04" role="tab">Contact</button>
+      <button class="tab-link is-active" data-tab="home" role="tab">Home</button>
+      <button class="tab-link" data-tab="resume" role="tab">Résumé</button>
+      <button class="tab-link" data-tab="projects" role="tab">Projects</button>
+      <button class="tab-link" data-tab="contact" role="tab">Contact</button>
     </nav>
   </header>
 
@@ -34,13 +34,14 @@
     <!-- ============ HOME ============ -->
     <section class="panel panel--home is-active" id="panel-home" role="tabpanel">
       <div class="hero__grid" aria-hidden="true"></div>
+      <div class="blob" aria-hidden="true"></div>
       <div class="hero">
         <div class="hero__top reveal">
-          <span>Engineering Manager — Amazon / Rufus</span>
-          <span>37.33° N / 121.89° W — San Jose, CA</span>
+          <span>Engineering Manager — Amazon · Rufus</span>
+          <span>San Jose, CA</span>
         </div>
 
-        <h1 class="hero__name reveal" style="--d:.06s">Naveen&nbsp;H<span class="accent">.</span></h1>
+        <h1 class="hero__name reveal" style="--d:.06s">Naveen&nbsp;<span class="accent">H</span></h1>
 
         <div class="hero__body">
           <div class="hero__lead">
@@ -62,30 +63,16 @@
               bugging me.
             </p>
             <p>
-              When I'm not working or tinkering with a side project, I'm outside or in the gym — on a
-              mountain or road bike, on a run, on a golf course, or under a barbell. Weekends usually mean
-              the local trails, the Santa Cruz mountains, or the long, winding roads south of Almaden
-              Valley. It's no accident two of those projects, VoxRider and Veloscape, started right there
-              in the saddle.
+              When I'm not working or tinkering with a side project, I'm on a bike — mountain and road both.
+              Weekends usually mean the local trails, the Santa Cruz mountains, or the long, winding roads
+              south of Almaden Valley. It's no accident two of those projects, VoxRider and Veloscape,
+              started right there in the saddle.
             </p>
           </div>
           </div>
           <figure class="hero__portrait reveal" style="--d:.3s">
             <img src="assets/img/profile.jpg" alt="Naveen H" width="900" height="1200" />
-            <figcaption><span>Fig. 01 — Profile</span><span>San Jose, CA</span></figcaption>
           </figure>
-        </div>
-
-        <div class="otc reveal" style="--d:.4s">
-          <div class="otc__head"><span>Off the clock</span><span>Index 01–06</span></div>
-          <ul class="otc__list">
-            <li><span class="otc__num">01</span><span class="otc__name">Mountain biking</span></li>
-            <li><span class="otc__num">02</span><span class="otc__name">Road cycling</span></li>
-            <li><span class="otc__num">03</span><span class="otc__name">Running</span></li>
-            <li><span class="otc__num">04</span><span class="otc__name">Golf</span></li>
-            <li><span class="otc__num">05</span><span class="otc__name">Strength training</span></li>
-            <li><span class="otc__num">06 / ♋</span><span class="otc__name">Cancerian</span></li>
-          </ul>
         </div>
       </div>
     </section>
@@ -94,7 +81,7 @@
     <section class="panel" id="panel-resume" role="tabpanel">
       <div class="wrap">
         <div class="section__head reveal">
-          <span class="section__tag">02 — Résumé</span>
+          <span class="section__tag">Résumé</span>
           <h2 class="section__title">A decade of building<br>platforms &amp; people.</h2>
           <p class="section__intro">
             Engineering manager with 13+ years at Amazon — from shipping big-data telemetry pipelines as
@@ -246,7 +233,7 @@
     <section class="panel" id="panel-projects" role="tabpanel">
       <div class="wrap">
         <div class="section__head reveal">
-          <span class="section__tag">03 — Projects</span>
+          <span class="section__tag">Projects</span>
           <h2 class="section__title">Nights &amp; weekends,<br>shipped.</h2>
           <p class="section__intro">
             Side projects I build end-to-end — design, code, backend, and store launch. A few are live in
@@ -263,7 +250,7 @@
     <!-- ============ CONTACT ============ -->
     <section class="panel panel--contact" id="panel-contact" role="tabpanel">
       <div class="wrap contact__inner reveal">
-        <span class="section__tag">04 — Contact</span>
+        <span class="section__tag">Contact</span>
         <h2 class="contact__title">Let's build<br>something.</h2>
         <a href="mailto:nhc002@gmail.com" class="contact__email">nhc002@gmail.com</a>
         <div class="contact__links">
@@ -276,8 +263,8 @@
 
   <footer class="footer">
     <span>© <span id="year"></span> Naveen H</span>
-    <span>San Jose, CA — 37.33° N</span>
-    <span>Built from scratch / <a href="https://github.com/nav1885" target="_blank" rel="noopener">@nav1885</a></span>
+    <span>San Jose, CA</span>
+    <span>Built from scratch · <a href="https://github.com/nav1885" target="_blank" rel="noopener">@nav1885</a></span>
   </footer>
 
   <script src="js/main.js"></script>
