@@ -53,6 +53,24 @@ const PROJECTS = [
     store: "https://apps.apple.com/app/id6775094738"
   },
   {
+    name: "Signal Grid", meta: "In development · Garmin", glyph: "SG",
+    tagline: "Your whole day, one glance.",
+    desc: "A premium watch face for Garmin AMOLED watches — bold stacked time surrounded by six customizable data slots: heart rate, body battery, stress, VO2 max, and more. Seven accent themes, configured right on the wrist with the native editor, with a burn-in-safe always-on mode.",
+    badges: [
+      { type: "ai", label: "Connect IQ · Monkey C" },
+      { type: "web", label: "AMOLED always-on" }
+    ]
+  },
+  {
+    name: "RepSense", meta: "In development · Garmin", glyph: "×8",
+    tagline: "Reps, counted honestly.",
+    desc: "An on-watch strength-training tracker for Garmin. It auto-counts reps from the wrist accelerometer, shows a per-set confidence dot instead of pretending when a count can't be trusted, and makes corrections a two-second fix. One press to start lifting — sets, rest timing, and workout recording are automatic.",
+    badges: [
+      { type: "ai", label: "Connect IQ · Monkey C" },
+      { type: "web", label: "Signal processing" }
+    ]
+  },
+  {
     name: "MicroMoment", commits: 36, glyph: "5m",
     tagline: "Five minutes a day.",
     desc: "A focused habit tracker built on one idea: small, daily, done. A hard cap of 5 active habits, 1–5 minutes each, one daily check-in. Fully local-first — SQLite on device, no account, no sync.",

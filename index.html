@@ -84,9 +84,15 @@
           <span class="section__tag">Résumé</span>
           <h2 class="section__title">A decade of building<br>platforms &amp; people.</h2>
           <p class="section__intro">
-            Engineering manager with 13+ years at Amazon — from shipping big-data telemetry pipelines as
-            an engineer to leading the platform behind Amazon's AI shopping assistant. My throughline:
-            find the right problems, enable the team, and turn ambiguity into shipped product.
+            Software engineering manager with 13+ years at Amazon building and leading high-caliber
+            engineering teams across large-scale distributed systems — and, for the past 18 months, at the
+            heart of agentic AI and multi-agent platforms. I currently lead a 12-engineer core platform team
+            for Rufus, Amazon's AI shopping assistant serving 300M+ MAU, where my team owns the
+            query-routing, resilience, and async-agent backbone of a production multi-agent system. That
+            work draws on a decade of scaling services, data platforms, and ML infrastructure — including
+            building and managing 100TB+ data pipelines. I focus on identifying the right problems, growing
+            engineers to their full potential, and building environments where strong teams deliver
+            substantial business value.
           </p>
         </div>
 
@@ -102,16 +108,19 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Rufus <span>— Santa Clara, CA</span></p>
               <p class="t-item__desc">
-                Lead and grow the <strong>core platform team</strong> for Rufus, Amazon's AI shopping
-                assistant — the experience that guides customers through their shopping journey and answers
-                questions on products, recommendations, comparisons, price alerts, and more.
+                Lead a <strong>12-engineer core platform team</strong> that builds the backbone of Rufus's
+                multi-agent architecture — growing it over 18 months through 4 hires and 4 promotions
+                (2 Senior SDE, 2 mid-level), advancing a third of the team.
               </p>
               <ul class="t-item__points">
-                <li>The team builds the core platform that orchestrates streaming workflows across multiple internal services and LLMs — with graceful degradation, load testing, and operations across North America, Europe, and the Far East.</li>
-                <li>The platform hosts a <strong>multi-agent</strong> stack — query understanding, routing, planning, and orchestration — to answer customer queries accurately and at low latency.</li>
-                <li>Drove delivery of <strong>Deep Research</strong>, an async agentic workflow that compiles a complete, personalized shopping guide from a customer's preferences.</li>
+                <li>Restructured the team into 4 charter-driven sub-teams — Agent Routing, Graceful Degradation, Async Agent Execution, and Load Test Infrastructure — aligning team topology to the platform's core pillars and establishing a tech-lead layer to own each area.</li>
+                <li>Led delivery of <strong>Router</strong>, the query-classification-and-dispatch service that interprets every customer query and routes it to the appropriate downstream agent — enabling multi-agent scaling to support new feature additions.</li>
+                <li>Drove a <strong>50% P90 latency reduction</strong> through context engineering — token-footprint reduction, tool-skip configurations, runtime model/prompt selection, and peak-load routing to smaller models — improving responsiveness while cutting inference cost at scale.</li>
+                <li>Led development of a multi-tier <strong>graceful-degradation framework</strong> (manual, automated, agentic) spanning LLM failure modes, sustaining <strong>99.9% availability</strong> and protecting customer experience through major peak events such as Prime Day and Black Friday.</li>
+                <li>Shipped the <strong>Deep Research</strong> shopping-guide platform, an async agentic workflow that compiles personalized shopping guides from user preferences — enabling a new class of long-form, personalized shopping guidance Rufus couldn't previously offer.</li>
+                <li>Built a load-testing framework adopted by <strong>200+ platform developers</strong>, enabling partner teams to validate performance and catch regressions before launch — operating across NA, EU, and FE under aggressive latency SLAs.</li>
               </ul>
-              <ul class="t-item__tags"><li>Agentic AI / LLMs</li><li>Multi-agent orchestration</li><li>Streaming</li><li>Global scale</li></ul>
+              <ul class="t-item__tags"><li>Agentic AI / LLMs</li><li>Multi-agent orchestration</li><li>Context engineering</li><li>99.9% availability</li></ul>
             </div>
           </li>
 
@@ -122,17 +131,18 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Last Mile <span>— Santa Cruz, CA</span></p>
               <p class="t-item__desc">
-                Managed the team building an Android <strong>in-vehicle delivery app</strong> that guides
-                drivers through daily routes, itineraries, and turn-by-turn navigation to deliver packages
-                to retail customers.
+                Built and led an <strong>8-engineer team</strong> delivering the in-vehicle delivery
+                application embedded in <strong>Rivian delivery trucks</strong> — drove 2 promotions and
+                1 SDE hire while launching the app across <strong>25,000+ trucks</strong> in the US, Canada,
+                and Germany.
               </p>
               <ul class="t-item__points">
-                <li>Partnered with external OEM partners on an over-the-air update mechanism, enabling rapid, autonomous updates that cut release time by <strong>75%</strong>.</li>
-                <li>Expanded the app into <strong>EU regions</strong> with multi-language support for seamless driver adoption.</li>
-                <li>Led developer-productivity initiatives — CI optimization, pre-commit automated testing, pipeline automation, and automated APK builds and signing.</li>
-                <li>Restructured operational metrics to better classify customer concerns, improving monitoring and notifications.</li>
+                <li>Delivered a novel, app-store-free <strong>over-the-air update mechanism</strong> — a first for our organization — enabling rapid, autonomous updates that cut release cycle time by <strong>75%</strong>.</li>
+                <li>Drove the engineering partnership between Amazon and Rivian, aligning two companies' teams and roadmaps to co-develop the integration that connects the truck app with Amazon's driver phone app — streaming real-time events to guide drivers through daily routes, delivery instructions, and turn-by-turn navigation.</li>
+                <li>Extended the app with <strong>multi-language support</strong> to enable seamless driver adoption in international markets.</li>
+                <li>Led developer-productivity initiatives — optimized CI, pre-commit automated testing, pipeline automation, and automated APK build and signing.</li>
               </ul>
-              <ul class="t-item__tags"><li>Android</li><li>OTA updates</li><li>EU expansion</li><li>Developer productivity</li></ul>
+              <ul class="t-item__tags"><li>Android</li><li>OTA updates</li><li>Rivian partnership</li><li>25,000+ trucks</li></ul>
             </div>
           </li>
 
@@ -143,14 +153,14 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Halo Health Technology <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Built and led a high-performing, <strong>9-person</strong> multi-disciplinary team to tackle
-                accuracy challenges and improve the efficacy of algorithms running on Halo health devices.
+                Built a <strong>9-engineer team from scratch</strong> — hiring across disciplines, driving
+                1 promotion, and defining the mission, charter, goals, and 3-year roadmap in collaboration
+                with product, science, engineering, and partner teams.
               </p>
               <ul class="t-item__points">
-                <li>Defined the team's mission, charter, goals, and a <strong>3-year roadmap</strong>, working closely with product, science, engineering, and partner teams.</li>
-                <li>Launched a framework to visualize algorithm performance for applied-science teams, integrated into the pipeline to gate deployments on KPIs and reduce churn.</li>
-                <li>Stood up on-device <strong>end-to-end testing</strong> in a controlled environment to measure performance and eliminate defects before shipping.</li>
-                <li>Built a sensor-data collection pipeline for iterative algorithm development, and shipped customer-facing features to <strong>200,000+</strong> users with a closed-loop improvement system.</li>
+                <li>Owned the full stack from on-device algorithm accuracy through customer-facing features, shipping a customer intervention system — personalized nudges, reminders, and alerts that kept <strong>200,000+ customers</strong> on track with their fitness plans and drove engagement.</li>
+                <li>Built a sensor-data collection and replay pipeline with automated test infrastructure that measured on-device algorithm accuracy against real captured data before deployment — surfacing regressions early and preventing accuracy defects from reaching customers.</li>
+                <li>Established a closed-loop system for continuous improvement, feeding production data back into iterative algorithm development.</li>
               </ul>
               <ul class="t-item__tags"><li>Wearables</li><li>Applied science</li><li>Algorithm quality</li><li>Roadmap &amp; charter</li></ul>
             </div>
@@ -163,17 +173,17 @@
               <h3 class="t-item__role">Software Development Manager</h3>
               <p class="t-item__org">Amazon · Lab126 <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Built a team of <strong>6 engineers</strong> from scratch to partner with applied and research
-                scientists on ML infrastructure for a multi-year roadmap — defining strategy, execution
-                methodology, and hiring.
+                Built a <strong>6-engineer team from scratch</strong> to partner with applied and research
+                scientists on ML infrastructure for a multi-year roadmap — defining team strategy, execution
+                model, hiring, and driving 2 promotions.
               </p>
               <ul class="t-item__points">
-                <li>Over two years, the team shipped <strong>4 services and 5 AWS batch workflows</strong> processing <strong>100TB+</strong> for pre-processing, transformation, and batch inference.</li>
-                <li>Delivered a fully managed reporting &amp; analytics platform — <strong>100+ dashboards</strong> serving <strong>1,200+</strong> engineers, PMs, and executives across regions; serverless microservices, GraphQL backends, and a React static-site frontend. Cut infra cost <strong>90%</strong>, saved 50%+ productivity time, CSAT 4/5.</li>
-                <li>Streamlined the SDLC — architecture, documentation, and CI/CD with automated tests — nearly eliminating post-production issues and reducing developer burnout by <strong>55%+</strong>.</li>
-                <li>Managed a <strong>$1M budget</strong> and AWS capacity planning, holding cost estimates within 5–10%.</li>
+                <li>Over 2 years, delivered <strong>4 services and 5 AWS Batch workflows</strong> processing <strong>100TB+</strong> for data pre-processing, transformation, and batch inference powering online and offline ML use cases.</li>
+                <li>Led development of a fully managed reporting and analytics platform serving <strong>100+ dashboards</strong> to <strong>1,200+ internal users</strong> (engineers, PMs, executives) across multiple geographies — cutting infrastructure costs <strong>90%</strong> and reclaiming 50%+ of engineering productivity time, at a 4/5 customer CSAT.</li>
+                <li>Streamlined SDLC — architecture, documentation, and fully automated CI/CD pipelines — nearly eliminating post-production issues and materially improving release reliability.</li>
+                <li>Managed a <strong>$1M budget</strong>, planning AWS resources for immediate and extended teams within a 5–10% variance.</li>
               </ul>
-              <ul class="t-item__tags"><li>Machine learning infra</li><li>Serverless</li><li>GraphQL · React</li><li>$1M budget</li></ul>
+              <ul class="t-item__tags"><li>ML infrastructure</li><li>100TB+ pipelines</li><li>Serverless</li><li>$1M budget</li></ul>
             </div>
           </li>
 
@@ -184,13 +194,14 @@
               <h3 class="t-item__role">Senior Software Development Engineer · Lead</h3>
               <p class="t-item__org">Amazon · Lab126 <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                As tech lead, designed and built a serverless, highly scalable RESTful ML microservice for
-                return-rate prediction, fronted by a dashboard web app.
+                Designed and built a serverless, highly scalable RESTful microservice that packages a
+                machine learning model to perform <strong>return-rate predictions</strong>, fronted by a web
+                application serving prediction dashboards across a complex set of parameters.
               </p>
               <ul class="t-item__points">
-                <li>Replaced a third-party dependency and a 3-week, error-prone manual process — <strong>saving $100K/year</strong> and returning results in seconds at basic cloud-infra cost; multi-threaded processors handled 10+ years of on-demand data.</li>
-                <li>Built a reusable, horizontally-scaling framework to ingest data from <strong>20+ contract manufacturers</strong> into 4 databases, with automated CI/CD (unit tests and code-review gates).</li>
-                <li>Designed an OAuth authentication microservice on <strong>AWS Cognito</strong> with federated access and signed temporary tokens, fronting all of the team's frontend apps.</li>
+                <li>Built multi-threaded data processors to seamlessly scale incoming data requests across time frames spanning 10+ years with on-demand processing — eliminating a 3P software dependency and <strong>saving $100K/year</strong>, replacing error-prone manual work that took over 3 weeks with a service that returned results in seconds at basic cloud-infra cost.</li>
+                <li>Developed a reusable framework to ingest data from <strong>20+ contract manufacturers</strong> that scales horizontally and writes to 4 separate databases — with an automated CI/CD pipeline running unit tests and code-review verification for seamless delivery to production.</li>
+                <li>Designed and developed an <strong>OAuth authentication microservice</strong> fronting all of the team's frontend applications — built for reusability and easy onboarding, with federated access and tight AWS Cognito integration issuing AWS-signed temporary tokens.</li>
               </ul>
               <ul class="t-item__tags"><li>ML services</li><li>OAuth · Cognito</li><li>CI/CD</li><li>Scalability</li></ul>
             </div>
@@ -203,12 +214,12 @@
               <h3 class="t-item__role">Software Development Engineer</h3>
               <p class="t-item__org">Amazon · Lab126 <span>— Sunnyvale, CA</span></p>
               <p class="t-item__desc">
-                Designed and built a <strong>BI reporting engine</strong> from the ground up, serving 400+
-                internal users across 10+ geographies.
+                Designed and built a <strong>BI reporting engine</strong> from the ground up to serve a wide
+                variety of customized reports for <strong>400+ internal users</strong> across 10+ geographies.
               </p>
               <ul class="t-item__points">
-                <li>Built and operated a big-data ingestion and summarization platform (<strong>100TB+</strong>) deriving device telemetry, performance, and usage metrics to monitor field-device health.</li>
-                <li>Added dashboard web-app features including <strong>SSO</strong> and VIP management.</li>
+                <li>Built and managed a big-data ingestion (<strong>100TB+</strong>) and summarization platform to understand device telemetry data and derive performance and usage-pattern metrics for monitoring the health of devices in the field.</li>
+                <li>Added features to a web application hosting dashboards — <strong>SSO</strong>, VIP management, and more.</li>
               </ul>
               <ul class="t-item__tags"><li>Big data</li><li>BI &amp; reporting</li><li>Telemetry</li><li>SSO</li></ul>
             </div>
