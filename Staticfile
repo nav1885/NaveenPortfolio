@@ -1,0 +1,4 @@
+# Railpack static-serve config (Railway).
+# Serve the repo root; index.html is the single entry point (hash-based router).
+root: .
+index_fallback: true

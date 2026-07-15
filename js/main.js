@@ -1,5 +1,5 @@
 /* =========================================================
-   Naveen H — Portfolio  ·  tab router + project data
+   Naveen H — profile  ·  tab router + project data
    ========================================================= */
 
 const CAP_MODE = location.search.includes("cap");
