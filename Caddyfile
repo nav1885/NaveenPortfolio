@@ -1,0 +1,19 @@
+# Railway static-serve config. Serves the repo root, but 404s any dotfile
+# path (e.g. /.git/...) so the git dir / config isn't browsable on the live site.
+{
+	admin off
+	persist_config off
+	auto_https off
+}
+
+:{$PORT:3000} {
+	root * /app
+	encode gzip
+
+	# Block dotfiles (/.git, /.gitignore, /.nojekyll, ...)
+	@dotfiles path_regexp /\.
+	respond @dotfiles 404
+
+	file_server
+	try_files {path} {path}/ /index.html
+}
