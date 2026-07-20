@@ -58,9 +58,9 @@ const PROJECTS = [
     store: "https://apps.apple.com/app/id6775094738"
   },
   {
-    name: "Signal Grid", meta: "In development · Garmin",
+    name: "Kestrel", meta: "In development · Garmin",
     tagline: "Your whole day, one glance.",
-    desc: "A premium watch face for Garmin AMOLED watches — bold stacked time surrounded by six customizable data slots: heart rate, body battery, stress, VO2 max, and more. Seven accent themes, configured right on the wrist with the native editor, with a burn-in-safe always-on mode.",
+    desc: "A premium ($2.99) watch face for Garmin AMOLED watches — centered stacked time surrounded by six customizable data slots (heart rate, body battery, stress, VO2 max, and more) and seven accent themes, configured right on the wrist with the native fēnix 8 editor. Engineered always-on-first, with per-device graceful degradation and a burn-in-safe AOD mode.",
     shots: [
       "assets/projects/signalgrid/01-hero.jpg",
       "assets/projects/signalgrid/03-custom.jpg",
@@ -79,6 +79,18 @@ const PROJECTS = [
     badges: [
       { type: "ai", label: "Connect IQ · Monkey C" },
       { type: "web", label: "Signal processing" }
+    ]
+  },
+  {
+    name: "Gunner Face", meta: "Personal build · Garmin",
+    tagline: "Red, gold, and glory.",
+    desc: "A just-for-the-love-of-it Garmin AMOLED watch face — an unofficial matchday tribute for Arsenal fans in red, gold, and brass. A bold Oswald clock anchors the face, with a live heart rate · steps · calories row, an Emirates-inspired skyline backdrop, and a burn-in-safe always-on mode. A personal fan project, not a store release.",
+    shots: [
+      "assets/projects/gunnerface/01-hero.jpg"
+    ],
+    badges: [
+      { type: "ai", label: "Connect IQ · Monkey C" },
+      { type: "web", label: "AMOLED always-on" }
     ]
   },
   {
