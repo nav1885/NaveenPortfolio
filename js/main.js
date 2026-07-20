@@ -62,8 +62,9 @@ const PROJECTS = [
     tagline: "Your whole day, one glance.",
     desc: "A premium ($2.99) watch face for Garmin AMOLED watches — centered stacked time surrounded by six customizable data slots (heart rate, body battery, stress, VO2 max, and more) and seven accent themes, configured right on the wrist with the native fēnix 8 editor. Engineered always-on-first, with per-device graceful degradation and a burn-in-safe AOD mode.",
     shots: [
-      "assets/projects/kestrel/fenix8.jpg",
-      "assets/projects/kestrel/venu3.jpg"
+      "assets/projects/kestrel/max.jpg",
+      "assets/projects/kestrel/lite.jpg",
+      "assets/projects/kestrel/aod.jpg"
     ],
     badges: [
       { type: "ai", label: "Connect IQ · Monkey C" },
@@ -84,8 +85,8 @@ const PROJECTS = [
     tagline: "Red, gold, and glory.",
     desc: "A just-for-the-love-of-it Garmin AMOLED watch face — an unofficial matchday tribute for Arsenal fans in red, gold, and brass. A bold Oswald clock anchors the face, with a live heart rate · steps · calories row, an Emirates-inspired skyline backdrop, and a burn-in-safe always-on mode. A personal fan project, not a store release.",
     shots: [
-      "assets/projects/gunnerface/fenix8.jpg",
-      "assets/projects/gunnerface/d2mach2pro.jpg"
+      "assets/projects/gunnerface/cover.jpg",
+      "assets/projects/gunnerface/face.jpg"
     ],
     badges: [
       { type: "ai", label: "Connect IQ · Monkey C" },
