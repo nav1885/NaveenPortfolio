@@ -176,8 +176,8 @@ function setTab(name, push = true) {
   if (name === "home") panel.querySelectorAll(".stat__num[data-count]").forEach(animateCount);
   if (push && location.hash.slice(1) !== name) history.replaceState(null, "", name === "home" ? "#" : "#" + name);
   document.title = name === "home"
-    ? "Naveen H — Engineering Manager"
-    : name[0].toUpperCase() + name.slice(1) + " · Naveen H";
+    ? "Naveen H Gowda — Engineering Manager"
+    : name[0].toUpperCase() + name.slice(1) + " · Naveen H Gowda";
 }
 
 // any element with data-tab switches tabs
