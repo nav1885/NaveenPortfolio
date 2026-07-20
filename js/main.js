@@ -58,18 +58,21 @@ const PROJECTS = [
     store: "https://apps.apple.com/app/id6775094738"
   },
   {
-    name: "Kestrel", meta: "In development · Garmin",
+    name: "Kestrel", meta: "Live · Connect IQ Store",
     tagline: "Your whole day, one glance.",
-    desc: "A premium ($2.99) watch face for Garmin AMOLED watches — centered stacked time surrounded by six customizable data slots (heart rate, body battery, stress, VO2 max, and more) and seven accent themes, configured right on the wrist with the native fēnix 8 editor. Engineered always-on-first, with per-device graceful degradation and a burn-in-safe AOD mode.",
+    desc: "A premium ($2.99) watch face for Garmin AMOLED watches, live on the Connect IQ Store — centered stacked time surrounded by six customizable data slots (heart rate, body battery, stress, VO2 max, and more) and seven accent themes, configured right on the wrist with the native fēnix 8 editor. Engineered always-on-first, with per-device graceful degradation and a burn-in-safe AOD mode.",
     shots: [
       "assets/projects/kestrel/max.jpg",
       "assets/projects/kestrel/lite.jpg",
       "assets/projects/kestrel/aod.jpg"
     ],
     badges: [
+      { type: "live", label: "Live on Connect IQ" },
       { type: "ai", label: "Connect IQ · Monkey C" },
       { type: "web", label: "AMOLED always-on" }
-    ]
+    ],
+    store: "https://apps.garmin.com/apps/6c9b61ac-04e9-48d9-8ec4-f3a563817ce8",
+    storeLabel: "Connect IQ Store ↗"
   },
   {
     name: "RepSense", meta: "In development · Garmin", glyph: "×8",
@@ -128,7 +131,7 @@ function cardHTML(p) {
   const repo = p.repo
     ? `<a href="${p.repo}" target="_blank" rel="noopener" class="card__link card__link--repo">View repo ↗</a>` : "";
   const store = p.store
-    ? `<a href="${p.store}" target="_blank" rel="noopener" class="card__link card__link--store">App Store ↗</a>` : "";
+    ? `<a href="${p.store}" target="_blank" rel="noopener" class="card__link card__link--store">${p.storeLabel || "App Store ↗"}</a>` : "";
   return `
     <article class="card ${p.feature ? "is-feature" : ""} reveal">
       ${visual}
